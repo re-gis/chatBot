@@ -1,0 +1,360 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'poppins'sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.super {
+    background-color: #fff;
+    width: 450px;
+    border-radius: 16px;
+    box-shadow: 0 0 128px rgba(0, 0, 0, 0.1),
+        0 32px 64px -48px rgba(0, 0, 0, 0.5);
+
+}
+
+.form {
+    padding: 25px 30px;
+}
+
+.form header {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: center;
+}
+
+.form form {
+    margin: 20px 0;
+}
+
+.form form .error-txt {
+    color: #721c24;
+    background: #f8d7da;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #f8d7da;
+    display: none;
+}
+
+.form form .field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form form .field input {
+    outline: none;
+}
+
+.form form .input input {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form form .name-details {
+    display: flex;
+}
+
+.form form .name-details .field:first-child {
+    margin-right: 10px;
+}
+
+.form form .name-details .field:last-child {
+    margin-left: 10px;
+}
+
+.form form .field label {
+    margin-bottom: 2px;
+}
+
+.form form .image input {
+    font: 17px;
+}
+
+.form form .button input {
+    margin-top: 13px;
+    height: 45px;
+    border: none;
+    font: 17px;
+    font-weight: 500;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form .link {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.form .link a {
+    color: #333;
+}
+
+.form .link a:hover {
+    text-decoration: underline;
+}
+
+.users {
+    padding: 25px 30px;
+}
+
+.users header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.super img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.users header .content {
+    display: flex;
+}
+
+.users header .content img {
+    width: 50px;
+    height: 50px;
+
+}
+
+.users header .details {
+    margin-left: 10px;
+}
+
+.users header .details span {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.users header .logout {
+    background-color: #333;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+
+.users .search {
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 10px;
+}
+
+.users .search input {
+    position: absolute;
+    height: 42px;
+    width: calc(100% - 50px);
+    border: 1px solid #ccc;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 17px;
+    padding: 0px 13px;
+    outline: none;
+}
+
+.users .search button {
+    width: 47px;
+    height: 42px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #333;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
+
+.users-list {
+    margin-top: 20px;
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.users-list::-webkit-scrollbar {
+    width: 0px;
+}
+
+.users-list a {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    page-break-after: 10px;
+    border-bottom-color: #f1f1f1;
+}
+
+.users-list a:last-child {
+    border: none;
+    margin-bottom: 0px;
+}
+
+.users-list a .content img {
+    height: 40px;
+    width: 40px;
+}
+
+.users-list a .content {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+
+}
+
+.users-list a .content .details {
+    margin-left: 17px;
+    color: black;
+}
+
+.users-list a .content .details span {
+    font-weight: bolder;
+}
+
+.users .content p {
+    color: #67676a;
+}
+
+.chat-area header {
+    padding: 18px 30px;
+    align-items: center;
+    display: flex;
+}
+
+.chat-area header img {
+    width: 45px;
+    height: 45px;
+
+}
+
+.content {
+    display: flex;
+}
+
+.content .details {
+    margin-left: 15px;
+}
+
+.content span {
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.chat-box {
+    height: 500px;
+    background: #f7f7f7;
+    padding: 10px 30px 20px 30px;
+    box-shadow: inset 0 32px 32px -32px rgb(0 0 0 /5%),
+        inset 0 -32px 32px -32px rgb(0 0 0 /5%);
+    overflow-y: auto;
+}
+
+.chat-box::-webkit-scrollbar {
+    width: 0px;
+}
+
+.chat-box .msg p {
+    word-wrap: break-word;
+    padding: 8px 16px;
+    box-shadow: 0 0 32px rgb(0 0 0 / 8%),
+        0 16px 16px -16px rgb(0 0 0 / 10%);
+}
+
+.chat-box .outgoing {
+    display: flex;
+}
+
+.outgoing .details p {
+    background: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 18px 18px 0px 18px;
+}
+
+.outgoing .details {
+    max-width: calc(100% - 130px);
+    margin-left: auto;
+}
+
+.chat-box .incoming {
+    display: flex;
+    align-items: flex-end;
+}
+
+.chat-box .incoming img {
+    height: 35px;
+    width: 35px;
+}
+
+.incoming .details p {
+    background: #fff;
+    color: #333;
+    border-radius: 18px 18px 18px 0;
+    padding: 8px 16px;
+    margin-right: auto;
+}
+
+.incoming .details {
+    margin-left: 10px;
+    max-width: calc(100% - 130px);
+}
+
+.chat-box .msg {
+    margin: 15px 0;
+}
+
+.chat-area .typing-area {
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.typing-area input {
+    height: 45px;
+    width: calc(100% - 58px);
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    outline: none;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.typing-area button {
+    outline: none;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    width: 55px;
+    cursor: pointer;
+}
+
+.btn {
+    margin-top: 10px;
+    outline: none;
+
+}

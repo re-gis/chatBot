@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    text-align: center;
+    margin-top: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 300px;
+    width: 500px;
+    margin-left: 500px;
+    padding:10px 50px;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+#input_Lay{
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 17px;
+}
+body div input.btn{
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 30px;
+    width: 80px;
+    cursor: pointer;
+}
+#btn_Lay{
+    padding-top: 10px ;
+}
+#linkInput a{
+    text-decoration:none ;
+    color: black;
+}
+#linkInput a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
