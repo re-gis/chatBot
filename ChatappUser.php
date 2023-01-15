@@ -14,7 +14,7 @@ include_once 'header.php';
             <header>
                 <?php
                     include_once "php/config.php";
-                    //$user_id = $row['unique_id'];
+                    // $user_id = $row['unique_id'];
                    $sql = mysqli_query($conn,"SELECT * FROM users WHERE unique_id = {$_SESSION['unique_id']}");
                    if(mysqli_num_rows($sql) > 0){
                     $row = mysqli_fetch_assoc($sql);
@@ -28,7 +28,7 @@ include_once 'header.php';
                         <p><?php echo $row['status']?></p>
                     </div>
                 </div>
-                <a href='#' class='logout'>Logout</a>
+                <a href='./ChatappLogin.php?logout_id:<?php echo $row['unique_id']?>' class='logout'>Logout</a>
             </header>
             <!-- <div class='search' hidden>
                 <span class='text'>Select a user to chat</span>

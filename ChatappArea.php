@@ -12,9 +12,9 @@ if ( !isset( $_SESSION[ 'unique_id' ] ) ) {
             <header>
         <?php
             include_once "php/config.php";
-            // $user_id = mysqli_real_escape_string($conn, $_GET['user_id']);
-            $userId = $_GET["user_id"];
-            $sql = mysqli_query($conn,"SELECT * FROM users WHERE user_id=".$user_id."");
+            $user_id = mysqli_real_escape_string($conn, $_GET['user_id']);
+            // $userId = $_GET["user_id"];
+            $sql = mysqli_query($conn,"SELECT * FROM users WHERE unique_id = {$user_id}");
             if(mysqli_num_rows($sql) > 0){
                 $row = mysqli_fetch_assoc($sql);
                 
@@ -32,65 +32,12 @@ if ( !isset( $_SESSION[ 'unique_id' ] ) ) {
                 
             </header>
             <div class="chat-box">
-                <div class="msg outgoing">
-                    <div class="details">
-                        <p>Hy this is about the outgoing message</p>
-                    </div>
-                </div>
-                <div class="msg incoming">
-                    <img src="./reg - Copy.png" alt="">
-                    <div class="details">
-                        <p>Hy this is about the incoming message</p>
-                    </div>
-                </div>
-                <div class="msg outgoing">
-                    <div class="details">
-                        <p>Hy this is about the outgoing message</p>
-                    </div>
-                </div>
-                <div class="msg incoming">
-                    <img src="./reg - Copy.png" alt="">
-                    <div class="details">
-                        <p>Hy this is about the incoming message</p>
-                    </div>
-                </div>
-                <div class="msg outgoing">
-                    <div class="details">
-                        <p>Hy this is about the outgoing message</p>
-                    </div>
-                </div>
-                <div class="msg incoming">
-                    <img src="./reg - Copy.png" alt="">
-                    <div class="details">
-                        <p>Hy this is about the incoming message</p>
-                    </div>
-                </div>
-                <div class="msg outgoing">
-                    <div class="details">
-                        <p>Hy this is about the outgoing message</p>
-                    </div>
-                </div>
-                <div class="msg incoming">
-                    <img src="./reg - Copy.png" alt="">
-                    <div class="details">
-                        <p>Hy this is about the incoming message</p>
-                    </div>
-                </div>
-                <div class="msg outgoing">
-                    <div class="details">
-                        <p>Hy this is about the outgoing message</p>
-                    </div>
-                </div>
-                <div class="msg incoming">
-                    <img src="./reg - Copy.png" alt="">
-                    <div class="details">
-                        <p>Hy this is about the incoming message</p>
-                    </div>
-                </div>
+                
+                
             </div>
-            <form action="insert-chat.php" class="typing-area">
+            <form action="#" autocomplete="off" method="POST" class="typing-area">
                 <input type="text" name="outgoing_id" value="<?php echo $_SESSION['unique_id'];?>" hidden>
-                <input type="text" name="incoming_id" value="<?php echo $user_id;?>"  hidden>
+                <input type="text" name="incoming_id" value="<?php echo $user_id;?>" hidden>
                 <input class="inputField" name="message" type="text" placeholder="Type your message here ...">
                 <button type="submit">Send</button>
             </form>
