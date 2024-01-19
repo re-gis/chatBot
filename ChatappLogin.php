@@ -22,7 +22,7 @@
                 </div>
 
             </form>
-            <div class="link">Not yet signed up? <a href="./ChatappSignup.php">SignUp now</a></div>
+            <div class="link">Not yet signed up? <a href="./index.php">SignUp now</a></div>
         </section>
     </div>
     <script src="login.js"></script>

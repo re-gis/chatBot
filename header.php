@@ -8,4 +8,5 @@
     <title>UsersList</title>
     <link rel="stylesheet" href="Chatapp.css">
     <link rel="shortcut icon" href="./download.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./php/images/images.jpg" type="image/x-icon">
 </head>
